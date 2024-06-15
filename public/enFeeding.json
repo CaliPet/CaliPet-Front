@@ -1,0 +1,418 @@
+[
+  {
+    "id": 1,
+    "name": "Meat Stew",
+    "ingredients": [
+      "1 kg ground beef (chicken or turkey can also be options)",
+      "1 russet potato (sweet potato, yam, and yacon potato can also be options, chopped)",
+      "1 medium carrot or pumpkin (cut into cubes)",
+      "1 cup green beans",
+      "Water"
+    ],
+    "methodOfPreparation": [
+      "Sauté the meat in a large pot until it is no longer pink. Do not drain the fat, as it is good fat for the pet. If you opted for a leaner meat (like chicken or turkey), add a few tablespoons of coconut oil to acquire a bit more fat.",
+      "Add the potato, carrot, and green beans.",
+      "Add enough water to cover the vegetables.",
+      "Bring to a boil, then reduce heat and simmer for about 20 minutes (or until the vegetables are cooked).",
+      "You can add a pinch of sea salt for extra flavor.",
+      "Allow to cool before serving. Refrigerate or freeze any leftovers.",
+      "This recipe can vary, aiming to offer diversified nutrients as proposed in the mentioned ingredients above."
+    ],
+    "preparationTime": "35 minutes",
+    "cost": "$5.50 ~ $6.65",
+    "category": [
+      "dog",
+      "cat",
+      "meat"
+    ],
+    "imgUrl": "/foods/guiosaFood.png"
+  },
+  {
+    "id": 2,
+    "name": "Festive Rice",
+    "ingredients": [
+      "1 ½ cups brown rice",
+      "1 tablespoon olive oil",
+      "2 kg ground turkey or chicken breast",
+      "3 cups chopped spinach",
+      "2 carrots, chopped",
+      "1 zucchini, shredded",
+      "½ cup peas (canned or frozen)"
+    ],
+    "methodOfPreparation": [
+      "In a large saucepan, bring 3 cups of water to a boil, cook the rice according to package instructions, and set aside.",
+      "Heat the olive oil in a large skillet over medium heat.",
+      "Add the ground turkey or chicken and cook until browned (about 3-5 minutes).",
+      "Be sure to break up the meat well while cooking.",
+      "Stir in the spinach, carrots, zucchini, peas, and brown rice until the spinach wilts and the mixture is heated through, about 3 to 5 minutes.",
+      "Allow to cool completely."
+    ],
+    "preparationTime": "37 minutes",
+    "cost": "$8",
+    "category": [
+      "dog",
+      "cat",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/arrozFesteiro.png"
+  },
+  {
+    "id": 3,
+    "name": "Canine Pumpkin Biscuit",
+    "ingredients": [
+      "⅓ cup filtered cold water",
+      "⅔ cup pumpkin puree (preferably neck or yellow pumpkin, as they are less watery)",
+      "2 cups whole grain brown rice flour",
+      "1 large egg (omit if your dog is allergic)",
+      "½ tablespoon flaxseed oil or olive oil"
+    ],
+    "methodOfPreparation": [
+      "Preheat the oven to 180°C (350°F).",
+      "Use parchment paper on the baking sheet to prevent the biscuits from sticking.",
+      "Mix the beaten egg and pumpkin together in a separate bowl until smooth (if not using egg, simply smooth the pumpkin puree and proceed to the next step).",
+      "In a large bowl, mix the flaxseed oil and whole grain brown rice flour.",
+      "With constant stirring, add the pumpkin mixture to the rice mixture and slowly add the water.",
+      "Make sure to reserve a bit of rice to use as a sort of topping.",
+      "Mix the ingredients well.",
+      "Using two small spoons, place small portions onto the parchment paper.",
+      "Bake for 35 to 40 minutes, or until the tops are completely dry.",
+      "Allow to cool and store in a dry plastic or glass container until ready to serve.",
+      "This homemade dog food recipe yields approximately 24 biscuits."
+    ],
+    "preparationTime": "45 minutes",
+    "cost": "$4",
+    "category": [
+      "dog",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/biscoitoDeAbobora.png"
+  },
+  {
+    "id": 4,
+    "name": "Carrot Cupcake",
+    "ingredients": [
+      "1 cup grated carrot",
+      "1 egg",
+      "⅓ cup honey",
+      "¼ cup olive oil",
+      "¼ cup unsweetened, unsalted peanut butter",
+      "1 teaspoon vanilla extract",
+      "1 cup all-purpose flour",
+      "1 teaspoon baking soda"
+    ],
+    "methodOfPreparation": [
+      "Preheat the oven to 180°C (350°F).",
+      "Mix the dry ingredients (flour and baking soda) in a bowl and set aside.",
+      "In another bowl, combine all the other ingredients until a homogeneous and well-mixed dough forms.",
+      "Gradually, to avoid clumps, add the dry ingredients to the wet ingredients until everything is mixed.",
+      "Divide the batter into silicone cupcake molds and bake for approximately 20 minutes.",
+      "To check if they're ready, insert a wooden toothpick into a cupcake: if it comes out clean, without any raw batter, the cupcakes are done!",
+      "Allow to cool slightly and then remove from the molds.",
+      "If you like, you can decorate the cupcakes with a little of the same unsweetened, unsalted peanut butter and treats.",
+      "Your pet will love it, and there's a good chance you'll enjoy it too!"
+    ],
+    "preparationTime": "30 minutes",
+    "cost": "$2.92",
+    "category": [
+      "dog",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/cupcakeCenoura.png"
+  },
+  {
+    "id": 5,
+    "name": "Strawberry Treat for Cats",
+    "ingredients": [
+      "1 egg",
+      "½ small box of strawberries",
+      "1 cup oat flour"
+    ],
+    "methodOfPreparation": [
+      "In a bowl, crack the egg and mix it with the oat flour.",
+      "Remove the stems from the strawberries and blend them with a hand mixer or blender until smooth.",
+      "Add the blended strawberries to the egg and oat mixture.",
+      "Pour the mixture into a greased baking sheet or cupcake molds.",
+      "Bake in an oven at 180°C (350°F) until golden brown.",
+      "If using a traditional rectangular pan, allow to cool and then break into small pieces before offering to the cat."
+    ],
+    "preparationTime": "30 minutes",
+    "cost": "$3",
+    "category": [
+      "cat",
+      "fruit"
+    ],
+    "imgUrl": "/foods/petiscoMorango.png"
+  },
+  {
+    "id": 6,
+    "name": "Coconut Treat for Dogs",
+    "ingredients": [
+      "¼ cup coconut oil",
+      "2 tablespoons peanut butter",
+      "2 cups rolled oats",
+      "¼ cup shredded coconut"
+    ],
+    "methodOfPreparation": [
+      "In a food processor, combine the coconut oil, peanut butter, and rolled oats.",
+      "Using a spoon, form small balls (if the mixture is too dry or too wet, simply add more oats or coconut oil to adjust).",
+      "Gently roll the balls in shredded coconut until completely coated.",
+      "Place on a container lined with parchment paper. Refrigerate for 1 hour before serving.",
+      "Transfer to plastic bags or airtight containers for storage. You can also freeze them to maintain their crunchiness."
+    ],
+    "preparationTime": "70 minutes",
+    "cost": "$1.60",
+    "category": [
+      "dog",
+      "fruit"
+    ],
+    "imgUrl": "/foods/petiscoCoco.png"
+  },
+  {
+    "id": 7,
+    "name": "Sweet Potato and Apple Muffin",
+    "ingredients": [
+      "½ cup sweet potato puree",
+      "½ cup apple juice",
+      "1 teaspoon cinnamon",
+      "1 cup oat flour"
+    ],
+    "methodOfPreparation": [
+      "Start with the apple juice: peel two apples, remove the seeds, and cut into pieces.",
+      "Blend in a blender with a little water. Strain the juice through a sieve.",
+      "To make the sweet potato puree, peel the potatoes, cook them in water, and when soft, mash them with a fork.",
+      "Preheat the oven to 170°C (340°F) for 10 minutes. Line a baking sheet with parchment paper.",
+      "Mix the sweet potato puree, oat flour, and cinnamon. Gradually add the apple juice until a homogeneous dough forms.",
+      "Using a teaspoon, divide the dough into balls and place on the baking sheet.",
+      "Bake for 10 to 15 minutes. Then, allow to cool and serve!"
+    ],
+    "preparationTime": "40 minutes",
+    "cost": "$1.20",
+    "category": [
+      "dog",
+      "fruit",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/bolinhoBatata.png"
+  },
+  {
+    "id": 8,
+    "name": "Banana and Carrot Cupcake",
+    "ingredients": [
+      "1 large egg",
+      "1 banana",
+      "⅓ cup unsweetened peanut butter",
+      "1 cup grated carrot",
+      "⅓ cup vegetable oil",
+      "¼ cup honey",
+      "1 cup whole wheat flour",
+      "⅓ cup oat flour",
+      "¼ teaspoon baking soda",
+      "Unsweetened creamy peanut butter",
+      "Cupcake liners"
+    ],
+    "methodOfPreparation": [
+      "Preheat the oven to 170°C (340°F) for 10 minutes.",
+      "Mix egg, banana, carrot, peanut butter, oil, and honey in a large bowl.",
+      "In another bowl, mix the flour, baking soda, and oat flour.",
+      "Combine the wet and dry ingredients in a single bowl.",
+      "Fill each cupcake liner and bake for 15 to 20 minutes.",
+      "Remove from the oven and let cool.",
+      "Unmold each cupcake and top with a dollop of peanut butter!"
+    ],
+    "preparationTime": "40 minutes",
+    "cost": "$3,14",
+    "category": [
+      "dog",
+      "fruit",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/cupcakeBanana.png"
+  },
+  {
+    "id": 9,
+    "name": "Chicken and Sweet Potato Sticks",
+    "ingredients": [
+      "2 sweet potatoes",
+      "2 boneless chicken breasts"
+    ],
+    "methodOfPreparation": [
+      "Clean the chicken breasts, removing any skin and fat.",
+      "Cut into thick strips.",
+      "Peel the sweet potatoes, cutting them into strips thinner than the chicken.",
+      "Preheat the oven to 120°C (250°F) for 10 minutes.",
+      "On a baking sheet lined with aluminum foil, place the chicken strips and then the sweet potato strips on top.",
+      "Bake for about 1 hour and 30 minutes. The ideal point is when the stick is very dry, like a stick snack."
+    ],
+    "preparationTime": "100 minutes",
+    "cost": "$4",
+    "category": [
+      "dog",
+      "meat",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/stickNugget.png"
+  },
+  {
+    "id": 10,
+    "name": "Frozen Banana Yogurt",
+    "ingredients": [
+      "½ cup whole plain yogurt",
+      "1 ripe banana",
+      "A little bit of water",
+      "Ice cube trays"
+    ],
+    "methodOfPreparation": [
+      "Mix all ingredients in a blender, except water, and blend until smooth.",
+      "Add water gradually as needed to form a creamy mixture.",
+      "Pour the mixture into cupcake molds and freeze.",
+      "Before serving, remove from the freezer, unmold, and let it thaw slightly for a few minutes."
+    ],
+    "preparationTime": "10 minutes",
+    "cost": "$1",
+    "category": [
+      "dog",
+      "fruit"
+    ],
+    "imgUrl": "/foods/iogurteGelado.png"
+  },
+  {
+    "id": 11,
+    "name": "Strawberry Ice Cream",
+    "ingredients": [
+      "Strawberries",
+      "Ice cube tray",
+      "Water"
+    ],
+    "methodOfPreparation": [
+      "Dice the fruit into small pieces, removing only the leaves.",
+      "Blend with water in a blender.",
+      "Pour into the ice cube tray and freeze. Once frozen, simply unmold and serve to your pet!"
+    ],
+    "preparationTime": "10 minutes",
+    "cost": "$1.60",
+    "category": [
+      "dog",
+      "fruit"
+    ],
+    "imgUrl": "/foods/sorveteMorango.png"
+  },
+  {
+    "id": 12,
+    "name": "Homemade Seed Mix",
+    "ingredients": [
+      "1 cup canary seeds",
+      "½ cup sunflower seeds",
+      "½ cup niger seeds",
+      "½ cup millet seeds"
+    ],
+    "methodOfPreparation": [
+      "Mix all ingredients in a bowl.",
+      "Store in an airtight container.",
+      "Serve a small amount daily as needed."
+    ],
+    "preparationTime": "6 minutes",
+    "cost": "$2.30",
+    "category": [
+      "bird",
+      "fruit"
+    ],
+    "imgUrl": "/foods/mixSementes.png"
+  },
+  {
+    "id": 13,
+    "name": "Bird Biscuits",
+    "ingredients": [
+      "1 cup cornmeal",
+      "1 cup whole wheat flour",
+      "½ cup honey",
+      "¼ cup water",
+      "1 egg",
+      "½ cup mixed seeds (sunflower, sesame, flax)"
+    ],
+    "methodOfPreparation": [
+      "Preheat the oven to 180°C (350°F).",
+      "Mix all ingredients until a dough forms.",
+      "Roll out the dough on a floured surface and cut into small biscuits.",
+      "Place the biscuits on a baking sheet lined with parchment paper.",
+      "Bake for about 15-20 minutes or until golden brown.",
+      "Let cool before serving to the birds."
+    ],
+    "preparationTime": "35 minutes",
+    "cost": "$2",
+    "category": [
+      "bird",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/biscoitoPassaro.png"
+  },
+  {
+    "id": 14,
+    "name": "Fruit and Vegetable Mix",
+    "ingredients": [
+      "½ chopped apple",
+      "½ grated carrot",
+      "¼ cup peas",
+      "¼ cup corn",
+      "¼ cup chopped spinach"
+    ],
+    "methodOfPreparation": [
+      "Mix all ingredients in a bowl.",
+      "Serve in small quantities as a supplement to the regular seed diet.",
+      "Remove any uneaten leftovers at the end of the day to avoid fermentation and insect attraction."
+    ],
+    "preparationTime": "10 minutes",
+    "cost": "$0.65",
+    "category": [
+      "bird",
+      "fruit"
+    ],
+    "imgUrl": "/foods/mixFrutasVerduras.png"
+  },
+  {
+    "id": 15,
+    "name": "Egg Mash",
+    "ingredients": [
+      "1 boiled egg",
+      "1 teaspoon breadcrumbs",
+      "1 teaspoon mixed seeds"
+    ],
+    "methodOfPreparation": [
+      "Boil the egg until firm.",
+      "Let cool and remove the shell.",
+      "Mash the egg and mix with breadcrumbs and seeds.",
+      "Serve in small portions as a protein supplement."
+    ],
+    "preparationTime": "20 minutes",
+    "cost": "$0.45",
+    "category": [
+      "bird",
+      "meat"
+    ],
+    "imgUrl": "/foods/papaOvo.png"
+  },
+  {
+    "id": 16,
+    "name": "Grain Salad",
+    "ingredients": [
+      "¼ cup cooked brown rice",
+      "¼ cup cooked quinoa",
+      "¼ cup cooked lentils",
+      "¼ cup cooked corn",
+      "1 tablespoon pumpkin seeds"
+    ],
+    "methodOfPreparation": [
+      "Cook the rice, quinoa, and lentils separately according to package instructions.",
+      "Let cool.",
+      "Mix all ingredients in a bowl.",
+      "Serve in small quantities as a nutritious supplement."
+    ],
+    "preparationTime": "50 minutes",
+    "cost": "$0.5",
+    "category": [
+      "bird",
+      "carbohydrate",
+      "fruit"
+    ],
+    "imgUrl": "/foods/saladaGraos.png"
+  }
+]

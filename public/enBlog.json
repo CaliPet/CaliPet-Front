@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Cat House",
+    "titleContent": "Want to learn how to make a house for your cat with just two materials? Then follow the step-by-step guide!",
+    "category": [
+      "hits"
+    ],
+    "imgUrl": "/blog/casinhaGato.png",
+    "materials": [
+      "1 medium cardboard box;",
+      "1 old knit t-shirt"
+    ],
+    "text": [
+      "Flatten or cut the flaps to make the entrance of the house.",
+      "Put the t-shirt on as if you were dressing the cardboard box, starting from the opening.",
+      "Adjust the t-shirt well on the box and tie the ends at the bottom of the box, you can also sew or glue it (be careful that the glue used is not harmful to the pet).",
+      "Tuck the sleeves of the t-shirt inside and it's ready!",
+      "If you want to give your cat more comfort, put a cushion at the base."
+    ],
+    "message": "Did you enjoy learning how to make your feline friend more comfortable? Want to learn more? Visit our feed and Caliblog screens to learn much more about your friend!"
+  },
+  {
+    "id": 2,
+    "title": "Benefits of Good Nutrition",
+    "titleContent": "Nutrition is a fundamental part of caring for our pets, but what are its benefits?",
+    "category": [
+      "health"
+    ],
+    "imgUrl": "/blog/comidaDogSaudavel.png",
+    "text": [
+      "General health: a balanced diet provides the essential nutrients your dog needs to maintain a strong immune system, healthy bones, and muscles.",
+      "Healthy coat and skin: quality foods contain essential fatty acids like omega-3 and omega-6, which greatly help in this aspect.",
+      "Energy and vitality: A balanced and nutritious diet can provide the necessary energy for daily activities, promoting an active and happy life.",
+      "Weight maintenance: quality foods have the right amount of calories and nutrients to help your dog maintain a healthy weight, thus preventing various health problems."
+    ],
+    "message": "Now that we've seen how important nutrition is, how about checking out our nutrition section and seeing the plans we have available to never let your buddy's bowl go empty?"
+  },
+  {
+    "id": 3,
+    "title": "Do Birds Live Long?",
+    "category": [
+      "curiosity"
+    ],
+    "titleContent": "Many people believe that birds don't live long. Let's see if that's true?",
+    "imgUrl": "/blog/passaroIdoso.png",
+    "text": [
+      "Cockatiel: Cockatiels have an average lifespan of 10 to 15 years, with some individuals living up to 20 years with proper care.",
+      "Budgerigar: Budgerigars have an average lifespan of 5 to 10 years, but some can live up to 15 years with proper care.",
+      "Canary: Canaries generally live 7 to 10 years, but with proper care can live up to 15 years or more.",
+      "Lovebird: Lovebirds have an average lifespan of 10 to 15 years, although some can live up to 20 years with proper care."
+    ],
+    "message": "That's right, many birds can surpass 10 years of age if given proper care. Want to make it happen? Come with CaliPet!"
+  },
+  {
+    "id": 4,
+    "title": "When to Train?",
+    "category": [
+      "curiosity"
+    ],
+    "titleContent": "Training a dog effectively involves patience, consistency, and positive training methods. Here are some best practices for training your furry friend!",
+    "imgUrl": "/blog/cachorroAdestrado.png",
+    "text": [
+      "Start Early: Begin training as early as possible. Puppies are more receptive to learning, but dogs of all ages can be trained.",
+      "Use Positive Reinforcement: Reward good behavior with treats, praise, and affection. Positive reinforcement is more effective and creates a positive association with the desired behavior.",
+      "Short and Frequent Sessions: Keep training sessions short (5-10 minutes) and frequent to maintain your dog's interest and avoid overwhelming them.",
+      "Be Consistent: Use the same commands and rewards consistently. Consistency helps the dog understand what is expected of them.",
+      "Train Basic Commands: Start with basic commands like 'sit', 'stay', 'come', 'lie down', and 'leave it'. These commands establish a foundation for more complex behaviors.",
+      "Socialization: Expose your dog to different people, animals, and environments in a controlled manner so they learn to behave appropriately in various situations.",
+      "Use Body Language: Dogs respond well to body language. Use clear and consistent gestures along with verbal commands.",
+      "Be Patient and Calm: Avoid punishments or yelling. Patience and calmness are essential to creating a positive learning environment and preventing the dog from associating training with negative experiences.",
+      "Reward Immediately: Reward your dog immediately after they perform the desired behavior so they can make the connection between the action and the reward.",
+      "Vary the Rewards: Use a variety of rewards, such as treats, toys, and praise, to keep your dog motivated.",
+      "Correct Unwanted Behaviors Appropriately: Redirect unwanted behaviors to desired behaviors and reward them when they behave correctly.",
+      "Train in Various Environments: Practice commands in different locations to ensure your dog obeys in any situation.",
+      "Establish a Routine: Dogs benefit from a consistent routine. Set regular schedules for feeding, walking, and training.",
+      "Utilize Interactive Toys: Mentally challenging toys can help keep your dog stimulated and reduce unwanted behaviors.",
+      "Consider Obedience Classes: Enrolling in obedience classes can be helpful, especially for first-time dog owners, providing professional guidance."
+    ],
+    "message": "Adopting these practices will help ensure that your dog learns effectively and becomes a well-behaved, happy companion!"
+  }
+]

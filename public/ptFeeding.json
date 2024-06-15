@@ -1,0 +1,418 @@
+[
+  {
+    "id": 1,
+    "name": "Guisado de Carne",
+    "ingredients": [
+      "1 kg de carne moída (frango ou peru também podem ser opções)",
+      "1 batata inglesa (batata-doce picada, inhame e batata-yacon também podem ser opções)",
+      "1 cenoura média ou abóbora (cortada em cubos)",
+      "1 xícara de vagem",
+      "Água"
+    ],
+    "methodOfPreparation": [
+      "Refogue a carne em uma panela grande até que não fique mais com aspecto rosado. Não drene a gordura, pois é uma boa gordura para o pet. Se você optou por uma carne mais magra (como o frango ou peru), adicione algumas colheres de sopa de óleo de coco para adquirir um pouco mais de gordura.",
+      "Adicione a batata, cenoura e vagem.",
+      "Acrescente água o suficiente para cobrir os legumes.",
+      "Deixe ferver, reduzindo o fogo e cozinhando por cerca de 20 minutos (ou até que os legumes estejam cozidos).",
+      "Pode adicionar uma pitada de sal marinho para dar um pouco mais de sabor.",
+      "Deixe esfriar antes de servir. Refrigere ou congele as porções que sobrarem.",
+      "Essa receita pode variar, buscando oferecer nutrientes diversificados como proposto nos ingredientes acima mencionados."
+    ],
+    "preparationTime": "35 minutos",
+    "cost": "R$21,60 ~ R$27,20",
+    "category": [
+      "dog",
+      "cat",
+      "meat"
+    ],
+    "imgUrl": "/foods/guiosaFood.png"
+  },
+  {
+    "id": 2,
+    "name": "Arroz Festeiro",
+    "ingredients": [
+      "1 ½ xícara de arroz integral",
+      "1 colher de sopa de azeite",
+      "1 kg de peito de peru ou frango moído",
+      "3 xícaras de espinafre picado",
+      "2 cenouras picadas",
+      "1 abobrinha triturada",
+      "½ xícara de ervilha (enlatada ou congelada)."
+    ],
+    "methodOfPreparation": [
+      "Em uma panela grande, coloque 3 xícaras de água, cozinhe o arroz de acordo com as instruções da embalagem e deixe de lado.",
+      "Aqueça o azeite em uma panela grande em fogo médio.",
+      "Adicione o peru ou frango moído e cozinhe até dourar (cerca de 3-5 minutos).",
+      "Certifique-se de desfazer bem a carne enquanto cozinha.",
+      "Junte o espinafre, cenoura, abobrinha, ervilha e o arroz integral até que o espinafre murche e a mistura seja aquecida por cerca de 3 a 5 minutos.",
+      "Deixe esfriar completamente."
+    ],
+    "preparationTime": "37 minutos",
+    "cost": "R$45",
+    "category": [
+      "dog",
+      "cat",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/arrozFesteiro.png"
+  },
+  {
+    "id": 3,
+    "name": "Biscoito de abóbora canino",
+    "ingredients": [
+      "⅓ xícara de água fria filtrada",
+      "⅔ xícara de purê de abóbora (de preferência uma abóbora de pescoço ou amarela, pois são menos aguadas)",
+      "2 xícaras de farinha integral de arroz integral",
+      "1 ovo grande (não coloque caso seu cão seja alérgico)",
+      "½ colheres de sopa de óleo de linhaça ou azeite"
+    ],
+    "methodOfPreparation": [
+      "Pré-aqueça o forno em 180º C.",
+      "Use papel manteiga na assadeira para evitar que os biscoitos grudem.",
+      "Misture o ovo lentamente batido e abóbora em um recipiente separado até que fique homogêneo (caso não utilize o ovo, alise apenas o purê de abóbora e prossiga até a próxima etapa).",
+      "Em uma tigela grande, misture o óleo de semente de linhaça e a farinha de arroz integral.",
+      "Com agitação constante, adicione a mistura de abóbora à mistura de arroz e adicione lentamente a água.",
+      "Certifique-se de deixar um pouco de arroz para ser usado como uma espécie de cobertura.",
+      "Misture bem os ingredientes.",
+      "Com o auxílio de duas colheres pequenas coloque pequenas porções sobre o papel manteiga.",
+      "Coloque no forno por 35 a 40 minutos, ou até que o topo esteja completamente seco.",
+      "Deixe esfriar e guarde em um recipiente seco de plástico ou vidro até que esteja pronto para ser servido.",
+      "Essa receita de comida caseira para cães rende aproximadamente 24 bolachas."
+    ],
+    "preparationTime": "45 minutos",
+    "cost": "R$20",
+    "category": [
+      "dog",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/biscoitoDeAbobora.png"
+  },
+  {
+    "id": 4,
+    "name": "Cupcake de cenoura",
+    "ingredients": [
+      "1 xícara de cenoura ralada",
+      "1 ovo",
+      "⅓ de xícara de mel",
+      "¼ de xícara de azeite de oliva",
+      "¼ de xícara de pasta de amendoim integral (sem açúcar nem sal)",
+      "1 colher de chá de extrato de baunilha",
+      "1 xícara de farinha de trigo",
+      "1 colher de chá de bicarbonato de sódio"
+    ],
+    "methodOfPreparation": [
+      "Pré-aqueça o forno a 180°C.",
+      "Misture os ingredientes secos (a farinha e o bicarbonato) em uma tigela e reserve.",
+      "Em uma outra tigela, junte todos os outros ingredientes até formar uma massa homogênea e bem misturada.",
+      "Aos pouquinhos, para não empelotar, acrescente os secos aos úmidos até tudo estar misturado.",
+      "Divida a massa em forminhas de cupcake de silicone e asse por aproximadamente 20 minutos.",
+      "Para checar se está pronto, espete um palitinho de madeira em um cupcake: se o palito sair limpo, sem nenhuma massa crua, o cupcake está pronto!",
+      "Deixe esfriar um pouco e desenforme.",
+      "Se você quiser, pode decorar o cupcake com um pouco da mesma pasta de amendoim integral e petiscos.",
+      "Seu pet vai amar e há chances reais de você gostar também!"
+    ],
+    "preparationTime": "30 minutos",
+    "cost": "R$14,60",
+    "category": [
+      "dog",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/cupcakeCenoura.png"
+  },
+  {
+    "id": 5,
+    "name": "Petisco de morango para gatos",
+    "ingredients": [
+      "1 ovo",
+      "½ caixinha de morangos",
+      "1 xícara de farinha de aveia"
+    ],
+    "methodOfPreparation": [
+      "Em uma tigela, quebre o ovo e misture com a farinha de aveia.",
+      "Retire os cabinhos e bata os morangos com um mixer ou liquidificador até ficar homogêneo.",
+      "Adicione o morango batido na mistura de ovo e aveia.",
+      "Em uma assadeira untada ou em formas de cupcake, despeje a mistura.",
+      "Asse em forno a 180 ºC até que fiquem douradas.",
+      "Se o processo for feito em forma tradicional, retangular, espere esfriar e quebre em pedacinhos antes de ofertar ao gato."
+    ],
+    "preparationTime": "30 minutos",
+    "cost": "R$15",
+    "category": [
+      "cat",
+      "fruit"
+    ],
+    "imgUrl": "/foods/petiscoMorango.png"
+  },
+  {
+    "id": 6,
+    "name": "Petisco de coco para cachorro",
+    "ingredients": [
+      "¼ xícara de óleo de coco",
+      "2 colheres de manteiga de amendoim",
+      "2 xícaras de aveia em flocos",
+      "¼ de xícara de coco ralado"
+    ],
+    "methodOfPreparation": [
+      "Em um processador, coloque o óleo de coco, a manteiga de amendoim e a aveia em flocos.",
+      "Com ajuda de uma colher, faça pequenas bolinhas (se a mistura estiver muito seca ou úmida, basta adicionar mais aveia ou óleo de coco para corrigir).",
+      "Passe as bolinhas suavemente no coco ralado, até estarem totalmente recobertas.",
+      "Coloque em um recipiente forrado com papel manteiga. Leve à geladeira por 1 hora antes de servir.",
+      "Coloque em sacos plásticos ou potes herméticos para armazenamento. Você também pode congelar para manter a crocância."
+    ],
+    "preparationTime": "70 minutos",
+    "cost": "R$8",
+    "category": [
+      "dog",
+      "fruit"
+    ],
+    "imgUrl": "/foods/petiscoCoco.png"
+  },
+  {
+    "id": 7,
+    "name": "bolinho de batata-doce e maçã",
+    "ingredients": [
+      "½ xícara de chá de purê de batata-doce",
+      "½ xícara de chá “suco de maçã",
+      "1 colher de chá de canela",
+      "1 xícara de farinha de aveia"
+    ],
+    "methodOfPreparation": [
+      "Comece pelo “suco de maçã”: descasque duas maçãs, tire as sementes e corte em pedaços.",
+      "Bata no liquidificador com um pouco de água. Coe com uma peneira o suco.",
+      "Para fazer o purê de batata-doce, retire a casca cozinhe as batatas na água e, quando estiverem macias, amasse com a ajuda de um garfo.",
+      "reaqueça o forno em 170°C por 10 minutos. Forre uma assadeira com papel manteiga.",
+      "Misture o purê de batata doce, a farinha de aveia e a canela. Vá colocando o suco de maçã aos poucos, até formar uma massa homogênea.",
+      "Com a ajuda de uma colher de chá, separe a massa em bolinhas e coloque na assadeira.",
+      "Asse por 10 a 15 minutos. Depois, deixe esfriar e pode servir!"
+    ],
+    "preparationTime": "40 minutos",
+    "cost": "R$6",
+    "category": [
+      "dog",
+      "fruit",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/bolinhoBatata.png"
+  },
+  {
+    "id": 8,
+    "name": "Cupcake de Banana e Cenoura",
+    "ingredients": [
+      "1 ovo grande",
+      "1 banana",
+      "⅓ xícara de chá de manteiga de amendoim sem açúcar",
+      "1 xícara de cenoura ralada",
+      "⅓ xícara de chá de óleo vegetal",
+      "¼ xícara de chá de mel",
+      "1 xícara de chá de farinha de trigo integral",
+      "⅓ xícara de chá de farinha de aveia",
+      "¼ colher de chá de bicarbonato de sódio",
+      "Pasta de amendoim cremosa sem açúcar",
+      "Forminhas de cupcakes que possam ir ao forno"
+    ],
+    "methodOfPreparation": [
+      "Preaqueça o forno em 170° C por 10 minutos.",
+      "Misture ovo, banana, cenoura, manteiga de amendoim, óleo e mel em uma tigela grande.",
+      "Em outro recipiente, misture a farinha, o bicarbonato e a aveia.",
+      "Misture os ingredientes úmidos e secos em uma única tigela.",
+      "Preencha cada forminha de cupcake e coloque para assar por 15 a 20 minutos.",
+      "Retire do forno, deixe esfriar.",
+      "Desenforme cada um e finalize com a pasta de amendoim em cima do cupcake!"
+    ],
+    "preparationTime": "40 minutos",
+    "cost": "R$15,70",
+    "category": [
+      "dog",
+      "fruit",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/cupcakeBanana.png"
+  },
+  {
+    "id": 9,
+    "name": "Sticks de Frango e batata-doce",
+    "ingredients": [
+      "2 batatas-doce",
+      "2 peitos de frango sem osso"
+    ],
+    "methodOfPreparation": [
+      "Limpe o peito de frango, retirando toda a pele e gordura que possa conter.",
+      "Corte em tiras grossas.",
+      "Descasque as batatas, cortando em tiras mais finas do que as de frango.",
+      "Preaqueça o forno em 120° C por 10 minutos.",
+      "Em uma assadeira com papel alumínio, coloque as tiras de frango e, por cima, as tiras de batata-doce.",
+      "Asse por cerca de 1h30. O ponto ideal é quando o stick estiver bem seco, como se fosse um petisco em palito."
+    ],
+    "preparationTime": "100 minutos",
+    "cost": "R$20",
+    "category": [
+      "dog",
+      "meat",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/stickNugget.png"
+  },
+  {
+    "id": 10,
+    "name": "Iogurte gelado de banana",
+    "ingredients": [
+      "½ xícara de iogurte natural integral",
+      "1 banana madura",
+      "Um pouquinho de água",
+      "Forminhas de gelo"
+    ],
+    "methodOfPreparation": [
+      "Misture todos os ingredientes em um liquidificador, menos a água, e bata até ficar homogêneo.",
+      "Adicione a água aos poucos, conforme o necessário para formar um creme.",
+      "Despeje a mistura em forminhas de cupcakes e congele tudo.",
+      "Antes de servir, retire do congelador, desenforme e deixe derreter levemente por alguns minutos."
+    ],
+    "preparationTime": "10 minutos",
+    "cost": "R$5",
+    "category": [
+      "dog",
+      "fruit"
+    ],
+    "imgUrl": "/foods/iogurteGelado.png"
+  },
+  {
+    "id": 11,
+    "name": "Sorvete de Morango",
+    "ingredients": [
+      "Morangos",
+      "Forma de gelo",
+      "Água"
+    ],
+    "methodOfPreparation": [
+      "Pique a fruta em pedacinhos, só retirando a folhinha.",
+      "Bata no liquidificador com a água.",
+      "Coloque na forminha e congele. Depois de congelado, é só desenformar e servir para o pet!"
+    ],
+    "preparationTime": "10 minutos",
+    "cost": "R$8",
+    "category": [
+      "dog",
+      "fruit"
+    ],
+    "imgUrl": "/foods/sorveteMorango.png"
+  },
+  {
+    "id": 12,
+    "name": "Mistura de Sementes Caseira",
+    "ingredients": [
+      "1 xícara de sementes de alpiste",
+      "1/2 xícara de sementes de girassol",
+      "1/2 xícara de sementes de niger",
+      "1/2 xícara de sementes de painço"
+    ],
+    "methodOfPreparation": [
+      "Misture todos os ingredientes em uma tigela.",
+      "Armazene em um recipiente hermético.",
+      "Sirva uma pequena quantidade diariamente, conforme necessário."
+    ],
+    "preparationTime": "6 minutos",
+    "cost": "R$12",
+    "category": [
+      "bird",
+      "fruit"
+    ],
+    "imgUrl": "/foods/mixSementes.png"
+  },
+  {
+    "id": 13,
+    "name": "Biscoitos para Pássaros",
+    "ingredients": [
+      "1 xícara de farinha de milho",
+      "1 xícara de farinha de trigo integral",
+      "1/2 xícara de mel",
+      "1/4 xícara de água",
+      "1 ovo",
+      "1/2 xícara de sementes variadas (girassol, gergelim, linhaça)"
+    ],
+    "methodOfPreparation": [
+      "Pré-aqueça o forno a 180°C.",
+      "Misture todos os ingredientes até formar uma massa.",
+      "Abra a massa em uma superfície enfarinhada e corte em pequenos biscoitos.",
+      "Coloque os biscoitos em uma assadeira forrada com papel manteiga.",
+      "Asse por cerca de 15-20 minutos ou até dourar.",
+      "Deixe esfriar antes de servir aos pássaros."
+    ],
+    "preparationTime": "35 minutos",
+    "cost": "R$10",
+    "category": [
+      "bird",
+      "carbohydrate"
+    ],
+    "imgUrl": "/foods/biscoitoPassaro.png"
+  },
+  {
+    "id": 14,
+    "name": "Mistura de Frutas e Vegetais",
+    "ingredients": [
+      "1/2 maçã picada",
+      "1/2 cenoura ralada",
+      "1/4 xícara de ervilhas",
+      "1/4 xícara de milho",
+      "1/4 xícara de espinafre picado"
+    ],
+    "methodOfPreparation": [
+      "Misture todos os ingredientes em uma tigela.",
+      "Sirva em pequenas quantidades como complemento à dieta regular de sementes.",
+      "Remova os restos não consumidos no final do dia para evitar a fermentação e a atração de insetos."
+    ],
+    "preparationTime": "10 minutos",
+    "cost": "R$3",
+    "category": [
+      "bird",
+      "fruit"
+    ],
+    "imgUrl": "/foods/mixFrutasVerduras.png"
+  },
+  {
+    "id": 15,
+    "name": "Papa de Ovos",
+    "ingredients": [
+      "1 ovo cozido",
+      "1 colher de chá de farinha de rosca",
+      "1 colher de chá de sementes variadas"
+    ],
+    "methodOfPreparation": [
+      "Cozinhe o ovo até ficar firme.",
+      "Deixe esfriar e retire a casca.",
+      "Amasse o ovo e misture com a farinha de rosca e as sementes.",
+      "Sirva em pequenas porções como um suplemento proteico."
+    ],
+    "preparationTime": "20 minutos",
+    "cost": "R$2",
+    "category": [
+      "bird",
+      "meat"
+    ],
+    "imgUrl": "/foods/papaOvo.png"
+  },
+  {
+    "id": 16,
+    "name": "Salada de Grãos",
+    "ingredients": [
+      "1/4 xícara de arroz integral cozido",
+      "1/4 xícara de quinoa cozida",
+      "1/4 xícara de lentilhas cozidas",
+      "1/4 xícara de milho cozido",
+      "1 colher de sopa de sementes de abóbora"
+    ],
+    "methodOfPreparation": [
+      "Cozinhe o arroz, a quinoa e as lentilhas separadamente conforme as instruções da embalagem.",
+      "Deixe esfriar.",
+      "Misture todos os ingredientes em uma tigela.",
+      "Sirva em pequenas quantidades como um complemento nutritivo."
+    ],
+    "preparationTime": "50 minutos",
+    "cost": "R$2,50",
+    "category": [
+      "bird",
+      "carbohydrate",
+      "fruit"
+    ],
+    "imgUrl": "/foods/saladaGraos.png"
+  }
+]

@@ -1,0 +1,250 @@
+{
+  "header": {
+    "messageSwitcher": "Tradução",
+    "descriptionSwitcher": "Troque a tradução do site",
+    "links": {
+      "home": "Início",
+      "about": "Sobre Nós",
+      "feeding": "Alimentação",
+      "blog": "Caliblog",
+      "talkUs": "Fale Conosco",
+      "login": "Entrar | Cadastro"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "welcome": "Seja Bem Vindo",
+        "text": {
+          "part1": "Aqui nunca vamos deixar seu",
+          "especial": "POTINHO",
+          "part2": "esvaziar!"
+        },
+        "btnCardText": "Encha seu Potinho!"
+      },
+      "feeding": {
+        "title": "Alimentação",
+        "cardDog": {
+          "title": "Alimente seu Aumigo!",
+          "description": "Venha aprender sobre a alimentação do seu parceiro de todos os momentos. Cuide dele e encha sua barriguinha!"
+        },
+        "cardCat": {
+          "title": "Alimente seu Miaumigo!",
+          "description": "Seu felino também merece o melhor que a comida pode oferecer. Venha encher o potinho dele!"
+        },
+        "cardBird": {
+          "title": "Alimente seu Piumigo!",
+          "description": "Sabia que tem alimentos que seu amigo voador não pode comer? Venha descobrir como o alimentar adequadamente!"
+        },
+        "btnCardText": "Encha seu Potinho!"
+      },
+      "plans": {
+        "title": "Planos",
+        "cardLittleFriend": {
+          "title": "Amiguinho",
+          "price": "Gratuito"
+        },
+        "cardFriend": {
+          "title": "Amigo",
+          "price": "R$ 19,90/mês"
+        },
+        "cardBigFriend": {
+          "title": "Amigão",
+          "price": "R$ 29,90/mês"
+        },
+        "cardsDescription": {
+          "benefit1": "Pratos para todos",
+          "benefit2": "Pratos Premium",
+          "benefit3": "Desconto c/ Parceiros"
+        },
+        "btnCardText": "Encher Potinho!"
+      },
+      "blog": {
+        "title": "Caliblog",
+        "subtitle": "Quer ficar por dentro de tudo sobre pets?",
+        "text": "Com a CaliBlog, você pode voar pelo conteúdo mais atualizado sobre pets e descobrir algo novo. Confira!",
+        "btnCardText": "Ler Mais"
+      },
+      "medias": {
+        "title": "Nossas Redes",
+        "subtitle": "Quer ser nosso aumigo, miaumigo ou piumigo? Nos siga!",
+        "text": "Fique por dentro de todas as informações a qualquer momento e qualquer hora!"
+      },
+      "rights": {
+        "slogan": "De Bico a Fucinho, Saúde é o Caminho!",
+        "terms": "Todos os direitos reservados, CaliPet© 2024"
+      }
+    },
+    "about": {
+      "principles": {
+        "title": "Nossos Princípios",
+        "mission": {
+          "title": "Para seu potinho não esvaziar...",
+          "description": "Traremos informações sobre alimentação de pets, de maneira acessível e visando o bem estar alimentar e a vida próspera."
+        },
+        "value": {
+          "title": "Em nosso ninho, você encontra...",
+          "description": "Muito carinho pelos pets e comprometimento para cuidar da sua alimentação, tudo de forma acessível e com informações de qualidade."
+        },
+        "vision": {
+          "title": "Pensando em voar...",
+          "description": "Levaremos nossa plataforma para aplicativos de celular, levaremos as informações sobre alimentação de pets para todo o mundo, seremos referenciais para especialistas da área alimentícia de pets e para os donos."
+        }
+      },
+      "visualIdentity": {
+        "title": "Identidade Visual",
+        "logo": {
+          "title": "Nossa Logo:",
+          "content": {
+            "text": "Nosso logo tem a ver com os Pets que estamos cuidando:",
+            "list": {
+              "item1": "Cachorro",
+              "item2": "Gato",
+              "item3": "Pássaro"
+            }
+          }
+        },
+        "name": {
+          "title": "Nosso Nome:",
+          "content": {
+            "text": "Nosso nome é a união de 3 palavras:",
+            "list": {
+              "item1": "C: Cuidado",
+              "item2": "Ali: Alimentação",
+              "item3": "Pet: Animais"
+            }
+          }
+        },
+        "slogan": {
+          "title": "Nosso Slogan:",
+          "content": {
+            "text": "De Bico a Fucinho, Saúde é o Caminho!",
+            "list": {
+              "item1": "De Bico a Fucinho - Faz referencia aos pets trabalhados",
+              "item2": "Saúde é o Caminho - Fala sobre o que estamos trazendo"
+            }
+          }
+        },
+        "fonts": {
+          "title": "Fontes usadas:",
+          "content": {
+            "text": "Usamos as fontes:",
+            "list": {
+              "item1": "Bowbly One SC: Logo",
+              "item2": "Bungee: Títulos e Subtítulos",
+              "item3": "Poppins: Textos Comuns"
+            }
+          }
+        },
+        "colors": {
+          "color1": "A cor Laranja é nossa principal, representa nosso carinho e amor pelos pets.",
+          "color2": "A cor Caramelo é uma cor forte e que contrasta com as demais, além de fazer referencia a pets dessa coloração.",
+          "color3": "A cor Creme é uma cor amena, e é a âncora para as demais cores.",
+          "color4": "A cor Marrom Clara traz um ar de sofisticação e simplicidade para nossa plataforma."
+        }
+      },
+      "ods": {
+        "title": "Objetivo de Desenvolvimento Sustentável",
+        "contentTitle": "Saúde e Bem-Estar dos Animais Domésticos",
+        "content": "Nossa ODS visa garantir cuidados adequados e alimentação saudável para animais de estimação. Focando em práticas responsáveis de criação, acesso a serviços veterinários de qualidade e ambientes seguros, este ODS promove o bem-estar físico e emocional dos animais, fortalecendo os laços entre humanos e seus pets e contribuindo para comunidades mais compassivas."
+      },
+      "law": {
+        "title": "Lei de Proteção de Animais",
+        "content": {
+          "item1": {
+            "title": "Lei dos Crimes Ambientais (1998, n° 9.605)",
+            "content": "EMENTA: Dispõe sobre as sanções penais e administrativas derivadas de condutas e atividades lesivas ao meio ambiente, e dá outras providências."
+          },
+          "item2": {
+            "title": "Projeto de Lei 1070/22",
+            "content": "Visa que é da obrigação dos proprietários de animais domésticos a garantir o bem-estar físico e mental do bicho de estimação, incluindo cuidados com nutrição, higiene, saúde, acomodação."
+          }
+        }
+      }
+    },
+    "feeding": {
+      "carousel": {
+        "item1": {
+          "text1": "Dê o",
+          "important": "MELHOR",
+          "text2": "para seu amigo de bigodes!"
+        },
+        "item2": {
+          "text1": "Dê o",
+          "important": "MELHOR",
+          "text2": "para seu amigo de quatro patas!"
+        },
+        "item3": {
+          "text1": "Dê o",
+          "important": "MELHOR",
+          "text2": "para seu amigo ciscador!"
+        }
+      },
+      "categories": {
+        "item1": "Cachorro",
+        "item2": "Gato",
+        "item3": "Pássaro"
+      }
+    },
+    "contentFeeding": {
+      "titleOne": "Ingredientes",
+      "titleTwo": "Modo de Preparo",
+      "warningTitle": "AVISO",
+      "warning": "A CaliPet recomenda que você leve seu pet em um veterinário antes de alimentar com nossas receitas."
+    },
+    "blog": {
+      "carousel": {
+        "item1": {
+          "text1": "Curta algumas",
+          "important": "CURIOSIDADES",
+          "text2": "para conhecê-lo melhor!"
+        },
+        "item2": {
+          "text1": "Confira",
+          "important": "DICAS",
+          "text2": "para deixá-lo feliz, seguro e saudável!"
+        },
+        "item3": {
+          "text1": "Descubra",
+          "important": "CUIDADOS",
+          "text2": "que são essenciais para seu amigo!"
+        }
+      },
+      "categories": {
+        "item1": "Dicas",
+        "item2": "Curiosidade",
+        "item3": "Cuidados"
+      },
+      "btn": {
+        "feed": "Alimentação"
+      }
+    },
+    "signUp": {
+      "input1": "Nome",
+      "input2": "Sobrenome",
+      "input3": "Email",
+      "input4": "Senha",
+      "input5": "Confirmar Senha",
+      "btnSignUp": "Criar Conta"
+    },
+    "login": {
+      "login": "Entrar",
+      "signUp": "Cadastro",
+      "input1": "Email",
+      "input2": "Senha",
+      "btnInput": "Entrar"
+    },
+    "forgotPassword": {
+      "title": "Esqueceu sua Senha?",
+      "text": "Digite abaixo seu email e enviaremos um link para redefinir sua senha.",
+      "input": "Email",
+      "btnInput": "Redefinir Senha"
+    },
+    "talkUs": {
+      "title": "Fale Conosco!",
+      "input1": "Assunto",
+      "input2": "Mensagem",
+      "btnSend": "Enviar"
+    }
+  }
+}

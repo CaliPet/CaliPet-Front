@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "Casinha de Gato",
+    "titleContent": "Quer aprender a fazer uma casinha para seu gato com Apenas dois materiais? Então acompanhe o passo a passo!",
+    "category": [
+      "hits"
+    ],
+    "imgUrl": "/blog/casinhaGato.png",
+    "materials": [
+      "1 caixa de papelão média;",
+      "1 camiseta de malha velha"
+    ],
+    "text": [
+      "Afunde ou corte as tampas para fazer a entrada da casinha.",
+      "Coloque a camiseta como se fosse vestir a caixa de papelão, começando pela sua abertura.",
+      "Ajeite bem a camiseta na caixa e amarre as pontas no fundo da caixa, também é possível costurar ou colar (cuidado para que a cola utilizada não faça mal para o animalzinho.)",
+      "Coloque as mangas da camiseta para dentro e pronto!",
+      "Caso queira dar mais conforto ao gatinho, coloque uma almofada na base."
+    ],
+    "message": "Gostou de aprender a como deixar meu amigo felino mais confortável? Quer aprender mais? Acesse nossas telas de alimentação e da Caliblog para aprender muito mais sobre seu amigo!"
+  },
+  {
+    "id": 2,
+    "title": "Benefícios da boa Alimentação",
+    "titleContent": "A alimentação é uma parte fundamental no cuidado de nossos pets, mas quais os seus benefícios?",
+    "category": [
+      "health"
+    ],
+    "imgUrl": "/blog/comidaDogSaudavel.png",
+    "text": [
+      "Saúde geral: uma dieta balanceada fornece os nutrientes essenciais que seu cachorro precisa para manter um sistema imunológico forte, ossos e músculos saudáveis.",
+      "Pelagem e pele saudáveis: alimentos de qualidade contêm ácidos graxos essenciais, como ômega-3 e ômega-6, auxiliam muito nesse aspecto.",
+      "Energia e vitalidade: Uma dieta equilibrada e nutritiva pode fornecer a energia necessária para suas atividades diárias, promovendo uma vida ativa e feliz.",
+      "Manutenção do peso: alimentos de qualidade têm a quantidade certa de calorias e nutrientes para ajudar seu cachorro a manter um peso saudável, assim, prevenindo diversos problemas de saúde."
+    ],
+    "message": "Agora que vimos como a alimentação é importante, que tal dar uma olhada na nossa aba de alimentação e verificar os planos que temos disponíveis para nunca deixar o potinho do seu amigão esvaziar?"
+  },
+  {
+    "id": 3,
+    "title": "Pássaros vivem muito?",
+    "category": [
+      "curiosity"
+    ],
+    "titleContent": "Muitas pessoas acreditam que pássaros não vivem muito. Vamos ver se é verdade?",
+    "imgUrl": "/blog/passaroIdoso.png",
+    "text": [
+      "Calopsita: As calopsitas têm uma vida média de 10 a 15 anos, com alguns indivíduos vivendo até 20 anos com os cuidados adequados.",
+      "Periquito Australiano: Os periquitos australianos têm uma vida média de 5 a 10 anos, mas alguns podem viver até 15 anos com os cuidados adequados.",
+      "Canário: Os canários geralmente vivem de 7 a 10 anos, mas com os cuidados adequados podem viver até 15 anos ou mais.",
+      "Agapornis: Os agapornis, também conhecidos como aves-do-amor, têm uma vida média de 10 a 15 anos, embora alguns possam viver até 20 anos com os cuidados adequados."
+    ],
+    "message": "Pois é, muitas aves conseguem ultrapassar os 10 anos de idade, isso se tiverem os cuidados adequados. Quer que se torne verdade? Vem com a CaliPet!"
+  },
+  {
+    "id": 4,
+    "title": "Quando Adestrar?",
+    "category": [
+      "curiosity"
+    ],
+    "titleContent": "Adestrar um cachorro de forma eficaz envolve paciência, consistência e métodos de treinamento positivos. Aqui estão algumas das melhores práticas para adestrar seu amigo peludo!",
+    "imgUrl": "/blog/cachorroAdestrado.png",
+    "text": [
+      "Comece Cedo: Inicie o treinamento o mais cedo possível. Filhotes são mais receptivos ao aprendizado, mas cães de todas as idades podem ser treinados.",
+      "Use Reforço Positivo: Recompense o bom comportamento com petiscos, elogios e carinho. O reforço positivo é mais eficaz e cria uma associação positiva com o comportamento desejado.",
+      "Sessões Curtas e Frequentes: Mantenha as sessões de treinamento curtas (5-10 minutos) e frequentes para manter o interesse do seu cão e evitar sobrecarregá-lo. Seja Consistente: Use os mesmos comandos e recompensas consistentemente. A consistência ajuda o cão a entender o que se espera dele.",
+      "Treine Comandos Básicos: Comece com comandos básicos como 'sentar', 'ficar', 'vir', 'deitar' e 'deixar'. Esses comandos estabelecem uma base para comportamentos mais complexos.",
+      "Socialização: Exponha seu cão a diferentes pessoas, animais e ambientes de forma controlada para que ele aprenda a se comportar adequadamente em diversas situações. Use a Linguagem Corporal: Os cães respondem bem à linguagem corporal. Use gestos claros e consistentes junto com comandos verbais.",
+      "Seja Paciente e Calmo: Evite punições ou gritos. A paciência e a calma são essenciais para criar um ambiente de aprendizado positivo e evitar que o cão associe o treinamento a experiências negativas.",
+      "Recompense Imediatamente: Recompense seu cão imediatamente após ele executar o comportamento desejado para que ele faça a conexão entre a ação e a recompensa. Varie as Recompensas: Use uma variedade de recompensas, como petiscos, brinquedos e elogios, para manter seu cão motivado.",
+      "Corrija Comportamentos Indesejados Apropriadamente: Redirecione comportamentos indesejados para comportamentos desejados e recompense-o quando ele se comportar corretamente.",
+      "Treine em Diversos Ambientes: Pratique os comandos em diferentes locais para garantir que seu cão obedeça em qualquer situação.",
+      "Estabeleça uma Rotina: Cães se beneficiam de uma rotina consistente. Estabeleça horários regulares para alimentação, caminhadas e treinamento.",
+      "Utilize Brinquedos Interativos: Brinquedos que desafiam mentalmente podem ajudar a manter seu cão estimulado e reduzir comportamentos indesejados.",
+      "Considere Aulas de Obediência: Inscrever-se em aulas de obediência pode ser útil, especialmente para donos de cães de primeira viagem, fornecendo orientação profissional."
+    ],
+    "message": "Adotar essas práticas ajudará a garantir que seu cachorro aprenda de maneira eficaz e se torne um companheiro bem-comportado e feliz!"
+  }
+]
