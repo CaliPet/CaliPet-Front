@@ -9,20 +9,12 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { CarouselComponent } from "@/components/carousel"
 import { Section } from "@/components/section";
 import { useTranslation } from 'react-i18next';
 import i18n from "@/lib/i18n";
 
 export function About() {
   const { t } = useTranslation();
-
-  const images = [
-    "/aboutImages/application1.png",
-    "/aboutImages/application2.png",
-    "/aboutImages/application3.png",
-    "/aboutImages/application4.png"
-  ];
 
   const cardsOurPrinciples = [
     {
@@ -207,12 +199,6 @@ export function About() {
           </Card>
         ))
       } />
-
-      <section id="visual-identity-applications" className="flex justify-center w-full md:h-screen bg-varOrange">
-        <div className="flex justify-center items-center md:h-screen m-0 max-w-7xl py-5 md:p-0">
-          <CarouselComponent images={images} />
-        </div>
-      </section>
 
       <Section idElement="ods" bgColor="bg-creme" title={t('pages.about.ods.title')} colorTitle="text-caramel" content={
         <div className="flex flex-col items-center gap-5 lg:flex-row">
