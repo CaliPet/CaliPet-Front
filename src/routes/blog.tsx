@@ -30,7 +30,7 @@ export function Blog() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = i18n.language === 'pt' ? '/ptBlog.json' : '/enBlog.json';
+      const url = i18n.language === 'pt' ? '/translate/ptBlog.json' : '/translate/enBlog.json';
       console.log('Fetching data from URL:', url); // Adicionado para debugging
       try {
         const response = await fetch(url);

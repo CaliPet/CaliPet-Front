@@ -255,7 +255,7 @@ export function About() {
           <div className="flex flex-col items-center gap-5 lg:flex-row">
             <img
               className="w-[180px] rounded"
-              src={i18n.language == "pt" ? "/odsPt.png" : "/odsEn.png"}
+              src={i18n.language == "pt" ? "/about/odsPt.png" : "/about/odsEn.png"}
               alt="imagem da nossa ODS"
             />
             <Card className="flex justify-center items-center flex-col  bg-transparent border-transparent shadow-none gap-2">

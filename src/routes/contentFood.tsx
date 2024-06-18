@@ -27,7 +27,7 @@ export function ContentFood() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = i18n.language === 'pt' ? '/ptFeeding.json' : '/enFeeding.json';
+      const url = i18n.language === 'pt' ? '/translate/ptFeeding.json' : '/translate/enFeeding.json';
       try {
         const response = await fetch(url);
         if (!response.ok) {

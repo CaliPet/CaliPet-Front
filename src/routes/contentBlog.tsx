@@ -27,7 +27,7 @@ export function ContentBlog() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = i18n.language === 'pt' ? '/ptBlog.json' : '/enBlog.json';
+      const url = i18n.language === 'pt' ? '/translate/ptBlog.json' : '/translate/enBlog.json';
       try {
         const response = await fetch(url);
         if (!response.ok) {

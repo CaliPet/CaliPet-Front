@@ -25,7 +25,7 @@
       "cat",
       "meat"
     ],
-    "imgUrl": "/foods/guiosaFood.png"
+    "imgUrl": "/feeding/foods/guiosaFood.png"
   },
   {
     "id": 2,
@@ -54,7 +54,7 @@
       "cat",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/arrozFesteiro.png"
+    "imgUrl": "/feeding/foods/arrozFesteiro.png"
   },
   {
     "id": 3,
@@ -85,7 +85,7 @@
       "dog",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/biscoitoDeAbobora.png"
+    "imgUrl": "/feeding/foods/biscoitoDeAbobora.png"
   },
   {
     "id": 4,
@@ -117,7 +117,7 @@
       "dog",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/cupcakeCenoura.png"
+    "imgUrl": "/feeding/foods/cupcakeCenoura.png"
   },
   {
     "id": 5,
@@ -141,7 +141,7 @@
       "cat",
       "fruit"
     ],
-    "imgUrl": "/foods/petiscoMorango.png"
+    "imgUrl": "/feeding/foods/petiscoMorango.png"
   },
   {
     "id": 6,
@@ -165,7 +165,7 @@
       "dog",
       "fruit"
     ],
-    "imgUrl": "/foods/petiscoCoco.png"
+    "imgUrl": "/feeding/foods/petiscoCoco.png"
   },
   {
     "id": 7,
@@ -192,7 +192,7 @@
       "fruit",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/bolinhoBatata.png"
+    "imgUrl": "/feeding/foods/bolinhoBatata.png"
   },
   {
     "id": 8,
@@ -226,7 +226,7 @@
       "fruit",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/cupcakeBanana.png"
+    "imgUrl": "/feeding/foods/cupcakeBanana.png"
   },
   {
     "id": 9,
@@ -250,7 +250,7 @@
       "meat",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/stickNugget.png"
+    "imgUrl": "/feeding/foods/stickNugget.png"
   },
   {
     "id": 10,
@@ -273,7 +273,7 @@
       "dog",
       "fruit"
     ],
-    "imgUrl": "/foods/iogurteGelado.png"
+    "imgUrl": "/feeding/foods/iogurteGelado.png"
   },
   {
     "id": 11,
@@ -294,7 +294,7 @@
       "dog",
       "fruit"
     ],
-    "imgUrl": "/foods/sorveteMorango.png"
+    "imgUrl": "/feeding/foods/sorveteMorango.png"
   },
   {
     "id": 12,
@@ -316,7 +316,7 @@
       "bird",
       "fruit"
     ],
-    "imgUrl": "/foods/mixSementes.png"
+    "imgUrl": "/feeding/foods/mixSementes.png"
   },
   {
     "id": 13,
@@ -343,7 +343,7 @@
       "bird",
       "carbohydrate"
     ],
-    "imgUrl": "/foods/biscoitoPassaro.png"
+    "imgUrl": "/feeding/foods/biscoitoPassaro.png"
   },
   {
     "id": 14,
@@ -366,7 +366,7 @@
       "bird",
       "fruit"
     ],
-    "imgUrl": "/foods/mixFrutasVerduras.png"
+    "imgUrl": "/feeding/foods/mixFrutasVerduras.png"
   },
   {
     "id": 15,
@@ -388,7 +388,7 @@
       "bird",
       "meat"
     ],
-    "imgUrl": "/foods/papaOvo.png"
+    "imgUrl": "/feeding/foods/papaOvo.png"
   },
   {
     "id": 16,
@@ -413,6 +413,6 @@
       "carbohydrate",
       "fruit"
     ],
-    "imgUrl": "/foods/saladaGraos.png"
+    "imgUrl": "/feeding/foods/saladaGraos.png"
   }
 ]

@@ -119,14 +119,14 @@ export function Header() {
             {selectedStatus ? (
               <>
                 {
-                  selectedStatus.value == 'pt' ? <img className="w-5" src="/pt.svg" alt="" /> : <img src="/en.svg" className="w-5" alt="" />
+                  selectedStatus.value == 'pt' ? <img className="w-5" src="/translate/pt.svg" alt="" /> : <img src="/translate/en.svg" className="w-5" alt="" />
                 }
                 {selectedStatus.label}
               </>
             ) : (
               <>
                 {
-                  i18n.language == 'pt' ? <img className="w-5" src="./pt.svg" alt="" /> : <img src="./en.svg" className="w-5" alt="" />
+                  i18n.language == 'pt' ? <img className="w-5" src="./translate/pt.svg" alt="" /> : <img src="./translate/en.svg" className="w-5" alt="" />
                 }
                 {i18n.language == 'pt' ? "Português" : "English"}
               </>
@@ -152,7 +152,7 @@ export function Header() {
                   >
                     <button className="flex p-2 gap-2 w-full md:text-sm lg:text-base" onClick={() => changeLanguage(`${status.value}`)}>
                       {
-                        status.value == 'pt' ? <img className="w-5" src="/pt.svg" alt="PT" /> : <img src="/en.svg" className="w-5" alt="EN" />
+                        status.value == 'pt' ? <img className="w-5" src="/translate/pt.svg" alt="PT" /> : <img src="/translate/en.svg" className="w-5" alt="EN" />
                       }
                       {status.label}
                     </button>
