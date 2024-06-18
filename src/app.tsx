@@ -1,4 +1,4 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Header } from "@/components/header"
 import { Outlet, useLocation } from "react-router-dom"
 import { useEffect } from 'react';
