@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "@/routes/home";
@@ -13,6 +12,7 @@ import { ErrorPage } from "@/routes/errorPage";
 import { ContentFood } from "./routes/contentFood";
 import { ContentBlog } from "./routes/contentBlog";
 import App from "./app";
+import ProtectedRoute from "@/routes/protectedRoute"; // ajuste o caminho conforme necessário
 import "./global.css";
 import '@/lib/i18n';
 
@@ -32,11 +32,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/feed",
-        element: <Feed />,
+        element: (
+          <ProtectedRoute>
+            <Feed />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/blog",
-        element: <Blog />,
+        element: (
+          <ProtectedRoute>
+            <Blog />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/contact",
@@ -48,11 +56,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/contentFood/:id",
-        element: <ContentFood />,
+        element: (
+          <ProtectedRoute>
+            <ContentFood />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/contentBlog/:id",
-        element: <ContentBlog />,
+        element: (
+          <ProtectedRoute>
+            <ContentBlog />
+          </ProtectedRoute>
+        ),
       }
     ]
   },
@@ -60,6 +76,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
