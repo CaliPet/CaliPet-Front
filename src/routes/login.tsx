@@ -123,7 +123,6 @@ export function Login() {
 
         <TabsContent value="login">
           <form
-            autoComplete="off"
             className="flex flex-col gap-5 p-2"
             onSubmit={handleSubmitLogin}
           >
