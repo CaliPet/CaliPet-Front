@@ -30,7 +30,7 @@ export function Blog() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = i18n.language === 'pt' ? '/ptBlog.json' : '/enBlog.json';
+      const url = i18n.language === 'pt' ? '/translate/ptBlog.json' : '/translate/enBlog.json';
       console.log('Fetching data from URL:', url); // Adicionado para debugging
       try {
         const response = await fetch(url);
@@ -51,21 +51,21 @@ export function Blog() {
   const carouselItems = [
     {
       id: "cat",
-      imgUrl: "/feedingImages/gatoFeeding.png",
+      imgUrl: "/feeding/gatoFeeding.png",
       text1: "pages.blog.carousel.item1.text1",
       text2: "pages.blog.carousel.item1.text2",
       important: "pages.blog.carousel.item1.important",
     },
     {
       id: "dog",
-      imgUrl: "/feedingImages/dogFeeding.png",
+      imgUrl: "/feeding/dogFeeding.png",
       text1: "pages.blog.carousel.item2.text1",
       text2: "pages.blog.carousel.item2.text2",
       important: "pages.blog.carousel.item2.important",
     },
     {
       id: "bird",
-      imgUrl: "/feedingImages/birdFeeding.png",
+      imgUrl: "/feeding/birdFeeding.png",
       text1: "pages.blog.carousel.item3.text1",
       text2: "pages.blog.carousel.item3.text2",
       important: "pages.blog.carousel.item3.important",

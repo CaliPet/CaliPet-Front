@@ -30,21 +30,21 @@ export function Feed() {
   const carouselItems = [
     {
       id: "cat",
-      imgUrl: "/feedingImages/gatoFeeding.png",
+      imgUrl: "/feeding/gatoFeeding.png",
       text1: "pages.feeding.carousel.item1.text1",
       text2: "pages.feeding.carousel.item1.text2",
       important: "pages.feeding.carousel.item1.important",
     },
     {
       id: "dog",
-      imgUrl: "/feedingImages/dogFeeding.png",
+      imgUrl: "/feeding/dogFeeding.png",
       text1: "pages.feeding.carousel.item2.text1",
       text2: "pages.feeding.carousel.item2.text2",
       important: "pages.feeding.carousel.item2.important",
     },
     {
       id: "bird",
-      imgUrl: "/feedingImages/birdFeeding.png",
+      imgUrl: "/feeding/birdFeeding.png",
       text1: "pages.feeding.carousel.item3.text1",
       text2: "pages.feeding.carousel.item3.text2",
       important: "pages.feeding.carousel.item3.important",
@@ -68,7 +68,7 @@ export function Feed() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = i18n.language === 'pt' ? '/ptFeeding.json' : '/enFeeding.json';
+      const url = i18n.language === 'pt' ? '/translate/ptFeeding.json' : '/translate/enFeeding.json';
       try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -140,9 +140,9 @@ export function Feed() {
                             >
                               <div className="absolute top-0 left-0 bg-light-brown-900 p-2 flex flex-col gap-2 rounded-e-2xl">
                                 {food.category.map(el => {
-                                  if (el.includes('cat')) return <img className="w-6" src="/feedingImages/catIconW.png" alt="" key={el} />;
-                                  if (el.includes('dog')) return <img className="w-6" src="/feedingImages/dogIconW.png" alt="" key={el} />;
-                                  if (el.includes('bird')) return <img className="w-6" src="/feedingImages/birdIconW.png" alt="" key={el} />;
+                                  if (el.includes('cat')) return <img className="w-6" src="/feeding/catIconW.png" alt="" key={el} />;
+                                  if (el.includes('dog')) return <img className="w-6" src="/feeding/dogIconW.png" alt="" key={el} />;
+                                  if (el.includes('bird')) return <img className="w-6" src="/feeding/birdIconW.png" alt="" key={el} />;
                                   return null; // Handle other categories if needed
                                 })}
                               </div>

@@ -3,12 +3,12 @@ import { useTranslation } from 'react-i18next';
 interface SectionProps {
   idElement: string;
   title?: string;
-  content: React.ReactNode;
   bgColor?: string;
   colorTitle?: string;
+  children: React.ReactNode;
 }
 
-export function Section({ idElement, title, content, bgColor, colorTitle = 'text-zinc-100' }: SectionProps) {
+export function Section({ children, idElement, title, bgColor, colorTitle = 'text-zinc-100' }: SectionProps) {
   const { t } = useTranslation();
 
   return (
@@ -27,9 +27,7 @@ export function Section({ idElement, title, content, bgColor, colorTitle = 'text
           id="content-feeding"
           className="flex justify-evenly gap-5 w-full flex-wrap"
         >
-          {
-            content
-          }
+          {children}
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Header } from "@/components/header"
 import { Outlet, useLocation } from "react-router-dom"
 import { useEffect } from 'react';
 
 export default function App() {
-
   const ScrollToTop = () => {
     const { pathname } = useLocation();
   
@@ -19,6 +19,8 @@ export default function App() {
       <ScrollToTop />
       <Header />
       <Outlet />
+    
+      <SpeedInsights/>
     </>
   )
 }
