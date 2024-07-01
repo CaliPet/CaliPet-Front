@@ -120,15 +120,16 @@ export function Login() {
       );
 
       if (!response.ok) {
+        if(response.status == 409) {
+          toast.warning('Email já cadastrado!')
+        }
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       toast.success("Usuário registrado com sucesso!");
       registerForm.reset();
     } catch (err) {
-      if(err.message == "HTTP error! status: 409") {
-        toast.warning('Email já cadastrado!')
-      }
+      console.log(err)
     }
 
     toast.dismiss('loader')
