@@ -95,8 +95,6 @@ export function Login() {
   async function handleRegisterSubmit(
     values: z.infer<typeof registerUserSchema>
   ) {
-    console.log(values);
-
     // Salvar o usuário
     const user = {
       nome: values.firstName + " " + values.lastName,
@@ -104,12 +102,14 @@ export function Login() {
       senha: values.password,
     };
 
-    console.log(JSON.stringify(user));
-
     // Aqui manda o usuário para o servidor
+    toast.loading('Enviando dados...', {
+      id: "loader"
+    })
+
     try {
       const response = await fetch(
-        "https://calipet-1-0.onrender.com/usuario/adicionar",
+        import.meta.env.VITE_API_REGISTER,
         {
           method: "POST",
           headers: {
@@ -123,23 +123,18 @@ export function Login() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const json = await response.json();
-      console.log(response);
-      console.log(json);
-
+      toast.success("Usuário registrado com sucesso!");
       registerForm.reset();
     } catch (err) {
-      console.log(err);
+      if(err.message == "HTTP error! status: 409") {
+        toast.warning('Email já cadastrado!')
+      }
     }
 
-    localStorage.setItem("user", JSON.stringify(user));
-    console.log("Usuário registrado com sucesso");
-    toast.success("Usuário registrado com sucesso");
+    toast.dismiss('loader')
   }
 
   async function handleLoginSubmit(values: z.infer<typeof loginUserSchema>) {
-    console.log(values);
-    
 
     // Salvar o usuário
     const user = {
@@ -147,12 +142,13 @@ export function Login() {
       senha: values.password,
     };
 
-    console.log(JSON.stringify(user));
-
     // Aqui manda o usuário para o servidor
+    toast.loading("Buscando dados...", {
+      id: 'loader'
+    })
     try {
       const response = await fetch(
-        "https://calipet-1-0.onrender.com/login/usuario",
+        import.meta.env.VITE_API_LOGIN,
         {
           method: "POST",
           headers: {
@@ -167,21 +163,18 @@ export function Login() {
       }
 
       const json = await response.json();
-      console.log(response);
-      console.log(json);
+      localStorage.setItem("user", JSON.stringify(json));
 
       loginForm.reset();
-      localStorage.setItem("user", JSON.stringify(json));
       toast.success("Usuário logado!");
 
       toggleAuth();
 
     } catch (err) {
       toast.error("Email ou Senha incorreto!");
-      console.log(err);
     }
 
-    
+    toast.dismiss('loader')
   }
 
   return (
