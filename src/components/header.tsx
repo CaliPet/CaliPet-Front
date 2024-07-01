@@ -188,14 +188,14 @@ export function Header() {
           <SheetContent className="bg-varOrange text-zinc-100 border-transparent">
             <SheetHeader className="">
               <SheetTitle className="text-3xl font-bungee text-zinc-100">
-                Olá, {data.name}!
+                Seja Bem Vindo!
               </SheetTitle>
             </SheetHeader>
 
             <Separator className="bg-zinc-100 mt-5" />
 
             <div className="flex flex-col gap-2 items-center pt-2">
-              <p className="font-bold">{data.name + " " + data.lastName}</p>
+              <p className="font-bold">{data.nome}</p>
               <p className="font-bold">{data.email}</p>
             </div>
 
