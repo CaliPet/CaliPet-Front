@@ -226,7 +226,7 @@ export function Header() {
           <SheetContent className="bg-varOrange text-zinc-100 border-transparent">
             <SheetHeader className="">
               <SheetTitle className="text-3xl font-bungee text-zinc-100">
-                {isAuthenticated ? `Olá, ${data.name}!` : "CaliMenu"}
+                {isAuthenticated ? `Seja Bem Vindo!` : "CaliMenu"}
               </SheetTitle>
             </SheetHeader>
 
@@ -244,7 +244,7 @@ export function Header() {
             {isAuthenticated ? (
               <>
                 <div className="flex flex-col gap-2 items-center pt-2 text-2xl">
-                  <p className="font-bold">{data.name + " " + data.lastName}</p>
+                  <p className="font-bold">{data.nome}</p>
                   <p className="font-bold">{data.email}</p>
                 </div>
 
