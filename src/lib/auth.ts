@@ -16,7 +16,8 @@ const useAuth = () => {
   }, [isAuthenticated]);
 
   const toggleAuth = () => {
-    setIsAuthenticated(prevAuth => !prevAuth);
+    setIsAuthenticated(prevAuth => !prevAuth);  
+    
     window.location.reload();
   };
 

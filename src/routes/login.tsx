@@ -1,13 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { useState } from "react";
 import { Eye, EyeClosed } from "@phosphor-icons/react";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
@@ -51,9 +43,35 @@ const registerUserSchema = z
     }
   });
 
+const loginUserSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(2),
+});
+
+type PasswordVisibilityState = {
+  login: boolean;
+  signup: boolean;
+  confirmSignup: boolean;
+};
+
 export function Login() {
   const { t } = useTranslation();
-  const [showPassLogin, setShowPassLogin] = useState(false);
+  const { toggleAuth, isAuthenticated } = useAuth();
+
+  const [passwordVisibility, setPasswordVisibility] =
+    useState<PasswordVisibilityState>({
+      login: false,
+      signup: false,
+      confirmSignup: false,
+    });
+
+  // Função para alternar a visibilidade da senha
+  const togglePasswordVisibility = (field: keyof PasswordVisibilityState) => {
+    setPasswordVisibility((prevState) => ({
+      ...prevState,
+      [field]: !prevState[field],
+    }));
+  };
 
   const registerForm = useForm<z.infer<typeof registerUserSchema>>({
     resolver: zodResolver(registerUserSchema),
@@ -66,12 +84,13 @@ export function Login() {
     },
   });
 
-  //Gera um numero aleatorio
-  function getRandomInt(min:number, max:number) {
-    const minCeiled = Math.ceil(min);
-    const maxFloored = Math.floor(max);
-    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
-  }
+  const loginForm = useForm<z.infer<typeof loginUserSchema>>({
+    resolver: zodResolver(loginUserSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
 
   async function handleRegisterSubmit(
     values: z.infer<typeof registerUserSchema>
@@ -80,7 +99,6 @@ export function Login() {
 
     // Salvar o usuário
     const user = {
-      idUsuario: getRandomInt(1000, 99999999),
       nome: values.firstName + " " + values.lastName,
       email: values.email,
       senha: values.password,
@@ -108,6 +126,8 @@ export function Login() {
       const json = await response.json();
       console.log(response);
       console.log(json);
+
+      registerForm.reset();
     } catch (err) {
       console.log(err);
     }
@@ -117,37 +137,51 @@ export function Login() {
     toast.success("Usuário registrado com sucesso");
   }
 
-  const [formDataLogin, setFormDataLogin] = useState({
-    email: "",
-    password: "",
-  });
+  async function handleLoginSubmit(values: z.infer<typeof loginUserSchema>) {
+    console.log(values);
+    
 
-  const handleChangeLogin = (event: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormDataLogin((prevFormDataLogin) => ({
-      ...prevFormDataLogin,
-      [name]: value,
-    }));
-  };
+    // Salvar o usuário
+    const user = {
+      email: values.email,
+      senha: values.password,
+    };
 
-  const { toggleAuth, isAuthenticated } = useAuth();
+    console.log(JSON.stringify(user));
 
-  function handleSubmitLogin(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    // Verificar se o usuário existe no Local Storage
-    const storedUser = JSON.parse(localStorage.getItem("user") || "{}");
+    // Aqui manda o usuário para o servidor
+    try {
+      const response = await fetch(
+        "https://calipet-1-0.onrender.com/login/usuario",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json", // Set the content type to JSON
+          },
+          body: JSON.stringify(user),
+        }
+      );
 
-    if (
-      storedUser.email === formDataLogin.email &&
-      storedUser.password === formDataLogin.password
-    ) {
-      console.log("Usuário logado com sucesso");
-      toast.success("Usuário logado com sucesso");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const json = await response.json();
+      console.log(response);
+      console.log(json);
+
+      loginForm.reset();
+      localStorage.setItem("user", JSON.stringify(json));
+      toast.success("Usuário logado!");
+
       toggleAuth();
-    } else {
-      console.log("Email ou senha incorretos");
-      toast.error("Email ou senha incorretos");
+
+    } catch (err) {
+      toast.error("Email ou Senha incorreto!");
+      console.log(err);
     }
+
+    
   }
 
   return (
@@ -172,91 +206,94 @@ export function Login() {
         </TabsList>
 
         <TabsContent value="login">
-          <form
-            className="flex flex-col gap-5 p-2"
-            onSubmit={handleSubmitLogin}
-          >
-            <Input
-              onChange={handleChangeLogin}
-              id="email"
-              name="email"
-              type="email"
-              placeholder={t("pages.login.input1")}
-              className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-              required
-            />
-
-            <label htmlFor="password" className="flex relative">
-              <Input
-                onChange={handleChangeLogin}
-                id="password"
-                name="password"
-                type={showPassLogin ? "text" : "password"}
-                placeholder={t("pages.login.input2")}
-                className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-                required
+          <Form {...loginForm} >
+            <form
+              onSubmit={loginForm.handleSubmit(handleLoginSubmit)}
+              className="space-y-4 px-2"
+            >
+              <FormField
+                control={loginForm.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Email:
+                    </FormLabel>
+                    <FormControl>
+                      <Input placeholder="Digite seu email..." {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
-              <div
-                className="absolute right-2 top-1 z-10"
-                onClick={() => setShowPassLogin(!showPassLogin)}
-              >
-                {showPassLogin ? <Eye size={28} /> : <EyeClosed size={28} />}
-              </div>
-            </label>
+              <FormField
+                control={loginForm.control}
+                name="password"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Senha:
+                    </FormLabel>
+                    <FormControl className="flex">
+                      <div className="relative">
+                        <Input
+                          placeholder="Digite sua senha..."
+                          type={passwordVisibility.signup ? "text" : "password"}
+                          {...field}
+                        />
 
-            <Dialog>
-              <DialogTrigger className="flex text-zinc-100 font-semibold underline pointer hover:text-zinc-200 justify-center">
-                {t("pages.forgotPassword.title")}
-              </DialogTrigger>
-              <DialogContent className="flex bg-varOrange border-transparent max-w-sm">
-                <DialogHeader>
-                  <DialogTitle className="font-bungee text-center text-2xl text-zinc-100">
-                    {t("pages.forgotPassword.title")}
-                  </DialogTitle>
-                  <DialogDescription className="text-md text-zinc-100 flex flex-col gap-3">
-                    {t("pages.forgotPassword.text")}
-                    <Input
-                      id="email-forgotpass"
-                      name="email-forgotpass"
-                      type="email"
-                      placeholder={t("pages.forgotPassword.input")}
-                      className="w-full text-black ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-                      required
-                    />
-                    <Button className="w-full bg-light-brown-500 hover:bg-light-brown">
-                      {t("pages.forgotPassword.btnInput")}
-                    </Button>
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-
-            {isAuthenticated ? (
-              <Button
-                type="button"
-                className="w-full bg-light-brown-900 hover:bg-light-brown-900"
-              >
-                Você já está logado!
-              </Button>
-            ) : (
-              <Button className="w-full bg-light-brown-500 hover:bg-light-brown">
-                {t("pages.login.btnInput")}
-              </Button>
-            )}
-          </form>
+                        <button
+                          type="button"
+                          className="absolute top-1 right-2"
+                          onClick={() => togglePasswordVisibility("signup")}
+                        >
+                          {passwordVisibility.signup ? (
+                            <Eye size={30} />
+                          ) : (
+                            <EyeClosed size={30} />
+                          )}
+                        </button>
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              {isAuthenticated ? (
+                <Button
+                  disabled
+                  className="w-full bg-light-brown-900"
+                >
+                  Você está logado!
+                </Button>
+              ) : (
+                <Button
+                  type="submit"
+                  className="w-full bg-light-brown-500 hover:bg-light-brown"
+                >
+                  {t("pages.login.btnInput")}
+                </Button>
+              )}
+            </form>
+          </Form>
         </TabsContent>
 
         <TabsContent value="create">
           <Form {...registerForm}>
-            <form onSubmit={registerForm.handleSubmit(handleRegisterSubmit)}>
+            <form
+              onSubmit={registerForm.handleSubmit(handleRegisterSubmit)}
+              className="space-y-4 px-2"
+            >
               <FormField
                 control={registerForm.control}
                 name="firstName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Nome</FormLabel>
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Nome:
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder="Nome" {...field} />
+                      <Input placeholder="Digite seu nome..." {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -267,9 +304,11 @@ export function Login() {
                 name="lastName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Sobrenome</FormLabel>
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Sobrenome:
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder="Sobrenome" {...field} />
+                      <Input placeholder="Digite seu sobrenome..." {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -280,9 +319,11 @@ export function Login() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Email:
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder="Email" {...field} />
+                      <Input placeholder="Digite seu email..." {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -293,9 +334,29 @@ export function Login() {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Senha</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Senha" type="password" {...field} />
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Senha:
+                    </FormLabel>
+                    <FormControl className="flex">
+                      <div className="relative">
+                        <Input
+                          placeholder="Digite sua senha..."
+                          type={passwordVisibility.signup ? "text" : "password"}
+                          {...field}
+                        />
+
+                        <button
+                          type="button"
+                          className="absolute top-1 right-2"
+                          onClick={() => togglePasswordVisibility("signup")}
+                        >
+                          {passwordVisibility.signup ? (
+                            <Eye size={30} />
+                          ) : (
+                            <EyeClosed size={30} />
+                          )}
+                        </button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -306,13 +367,35 @@ export function Login() {
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Confirmar Senha</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="Confirmar Senha"
-                        type="password"
-                        {...field}
-                      />
+                    <FormLabel className="text-light-brown-900 text-lg font-semibold">
+                      Confirmar Senha:
+                    </FormLabel>
+                    <FormControl className="flex">
+                      <div className="relative">
+                        <Input
+                          placeholder="Confirme sua senha..."
+                          type={
+                            passwordVisibility.confirmSignup
+                              ? "text"
+                              : "password"
+                          }
+                          {...field}
+                        />
+
+                        <button
+                          type="button"
+                          className="absolute top-1 right-2"
+                          onClick={() =>
+                            togglePasswordVisibility("confirmSignup")
+                          }
+                        >
+                          {passwordVisibility.confirmSignup ? (
+                            <Eye size={30} />
+                          ) : (
+                            <EyeClosed size={30} />
+                          )}
+                        </button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
