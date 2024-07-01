@@ -20,6 +20,7 @@ import useAuth from "@/lib/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { Navigate } from "react-router-dom";
 
 const registerUserSchema = z
   .object({
@@ -57,6 +58,8 @@ type PasswordVisibilityState = {
 export function Login() {
   const { t } = useTranslation();
   const { toggleAuth, isAuthenticated } = useAuth();
+
+  
 
   const [passwordVisibility, setPasswordVisibility] =
     useState<PasswordVisibilityState>({
@@ -176,6 +179,10 @@ export function Login() {
     }
 
     toast.dismiss('loader')
+  }
+
+  if(isAuthenticated) {
+    return <Navigate to='/'/>
   }
 
   return (
