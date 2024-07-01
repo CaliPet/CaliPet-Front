@@ -1,6 +1,4 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Dialog,
   DialogContent,
@@ -9,30 +7,119 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { useTranslation } from "react-i18next";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Eye, EyeClosed } from "@phosphor-icons/react";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
+import { useTranslation } from "react-i18next";
 import useAuth from "@/lib/auth";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+
+const registerUserSchema = z
+  .object({
+    firstName: z.string(),
+    lastName: z.string(),
+    email: z.string().email(),
+    password: z.string().min(8, {
+      message: "Sua senha deve ter no mínimo 8 caracteres!",
+    }),
+    confirmPassword: z.string().min(8, {
+      message: "Sua senha deve ter no mínimo 8 caracteres!",
+    }),
+  })
+  .superRefine(({ confirmPassword, password }, context) => {
+    if (confirmPassword !== password) {
+      context.addIssue({
+        code: "custom",
+        message: "As senhas não são iguais",
+        path: ["confirmPassword"],
+      });
+    }
+  });
 
 export function Login() {
   const { t } = useTranslation();
   const [showPassLogin, setShowPassLogin] = useState(false);
-  const [showPassRegister, setShowPassRegister] = useState(false);
-  const [showPassConfirm, setShowPassConfirm] = useState(false);
+
+  const registerForm = useForm<z.infer<typeof registerUserSchema>>({
+    resolver: zodResolver(registerUserSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+    },
+  });
+
+  //Gera um numero aleatorio
+  function getRandomInt(min:number, max:number) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+  }
+
+  async function handleRegisterSubmit(
+    values: z.infer<typeof registerUserSchema>
+  ) {
+    console.log(values);
+
+    // Salvar o usuário
+    const user = {
+      idUsuario: getRandomInt(1000, 99999999),
+      nome: values.firstName + " " + values.lastName,
+      email: values.email,
+      senha: values.password,
+    };
+
+    console.log(JSON.stringify(user));
+
+    // Aqui manda o usuário para o servidor
+    try {
+      const response = await fetch(
+        "https://calipet-1-0.onrender.com/usuario/adicionar",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json", // Set the content type to JSON
+          },
+          body: JSON.stringify(user),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const json = await response.json();
+      console.log(response);
+      console.log(json);
+    } catch (err) {
+      console.log(err);
+    }
+
+    localStorage.setItem("user", JSON.stringify(user));
+    console.log("Usuário registrado com sucesso");
+    toast.success("Usuário registrado com sucesso");
+  }
 
   const [formDataLogin, setFormDataLogin] = useState({
     email: "",
     password: "",
-  });
-  const [formDataRegister, setFormDataRegister] = useState({
-    name: "",
-    lastName: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
   });
 
   const handleChangeLogin = (event: ChangeEvent<HTMLInputElement>) => {
@@ -44,11 +131,6 @@ export function Login() {
   };
 
   const { toggleAuth, isAuthenticated } = useAuth();
-
-  const handleChangeRegister = (event: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormDataRegister((prevFormData) => ({ ...prevFormData, [name]: value }));
-  };
 
   function handleSubmitLogin(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -66,38 +148,6 @@ export function Login() {
       console.log("Email ou senha incorretos");
       toast.error("Email ou senha incorretos");
     }
-  }
-
-  function handleSubmitRegister(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    console.log(formDataRegister);
-
-    // Verificar se as senhas correspondem
-    if (formDataRegister.password !== formDataRegister.confirmPassword) {
-      toast.error("As senhas não correspondem");
-      return;
-    }
-
-    // Salvar o usuário no Local Storage
-    const user = {
-      name: formDataRegister.name,
-      lastName: formDataRegister.lastName,
-      email: formDataRegister.email,
-      password: formDataRegister.password,
-    };
-    localStorage.setItem("user", JSON.stringify(user));
-    console.log("Usuário registrado com sucesso");
-    toast.success("Usuário registrado com sucesso");
-
-    // Limpar os campos do formulário
-    setFormDataRegister({
-      name: "",
-      lastName: "",
-      email: "",
-      password: "",
-      confirmPassword: "",
-    });
   }
 
   return (
@@ -182,7 +232,10 @@ export function Login() {
             </Dialog>
 
             {isAuthenticated ? (
-              <Button type="button" className="w-full bg-light-brown-900 hover:bg-light-brown-900">
+              <Button
+                type="button"
+                className="w-full bg-light-brown-900 hover:bg-light-brown-900"
+              >
                 Você já está logado!
               </Button>
             ) : (
@@ -194,79 +247,85 @@ export function Login() {
         </TabsContent>
 
         <TabsContent value="create">
-          <form
-            autoComplete="off"
-            className="flex flex-col gap-5 p-2"
-            onSubmit={handleSubmitRegister}
-          >
-            <Input
-              onChange={handleChangeRegister}
-              id="name"
-              name="name"
-              type="text"
-              placeholder={t("pages.signUp.input1")}
-              className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-              required
-            />
-            <Input
-              onChange={handleChangeRegister}
-              id="lastName"
-              name="lastName"
-              type="text"
-              placeholder={t("pages.signUp.input2")}
-              className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-              required
-            />
-            <Input
-              onChange={handleChangeRegister}
-              id="email"
-              name="email"
-              type="email"
-              placeholder={t("pages.signUp.input3")}
-              className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-              required
-            />
-
-            <label htmlFor="password" className="flex relative">
-              <Input
-                onChange={handleChangeRegister}
-                id="password"
+          <Form {...registerForm}>
+            <form onSubmit={registerForm.handleSubmit(handleRegisterSubmit)}>
+              <FormField
+                control={registerForm.control}
+                name="firstName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Nome</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Nome" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={registerForm.control}
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Sobrenome</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Sobrenome" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={registerForm.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Email</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Email" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={registerForm.control}
                 name="password"
-                type={showPassRegister ? "text" : "password"}
-                placeholder={t("pages.signUp.input4")}
-                className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-                required
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Senha</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Senha" type="password" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
-              <div
-                className="absolute right-2 top-1 z-10"
-                onClick={() => setShowPassRegister(!showPassRegister)}
-              >
-                {showPassRegister ? <Eye size={28} /> : <EyeClosed size={28} />}
-              </div>
-            </label>
-
-            <label htmlFor="confirmPassword" className="flex relative">
-              <Input
-                onChange={handleChangeRegister}
-                id="confirmPassword"
+              <FormField
+                control={registerForm.control}
                 name="confirmPassword"
-                type={showPassConfirm ? "text" : "password"}
-                placeholder={t("pages.signUp.input5")}
-                className="w-full ring-1 focus-visible:ring-1 focus-visible:ring-offset-0"
-                required
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Confirmar Senha</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="Confirmar Senha"
+                        type="password"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
-              <div
-                className="absolute right-2 top-1 z-10"
-                onClick={() => setShowPassConfirm(!showPassConfirm)}
+              <Button
+                type="submit"
+                className="w-full bg-light-brown-500 hover:bg-light-brown"
               >
-                {showPassConfirm ? <Eye size={28} /> : <EyeClosed size={28} />}
-              </div>
-            </label>
-
-            <Button className="w-full bg-light-brown-500 hover:bg-light-brown">
-              {t("pages.signUp.btnSignUp")}
-            </Button>
-          </form>
+                {t("pages.signUp.btnSignUp")}
+              </Button>
+            </form>
+          </Form>
         </TabsContent>
       </Tabs>
 
