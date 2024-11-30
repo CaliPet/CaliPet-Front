@@ -58,6 +58,7 @@ export function Login() {
   const { t } = useTranslation();
   const { toggleAuth, isAuthenticated } = useAuth();
 
+  toggleAuth();
   const [passwordVisibility, setPasswordVisibility] =
     useState<PasswordVisibilityState>({
       login: false,
