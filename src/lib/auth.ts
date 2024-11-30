@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useAuth = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(() => {
-    return localStorage.getItem('isAuthenticated') === 'true';
-  });
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
   const [data] = useState(
     () => {
